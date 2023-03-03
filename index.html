@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ef20894d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Movie Watchlist</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Find your movie</h1>
+        <a href="./watchlist.html">My watchlist</a>
+      </header>
+      <main>
+        <div class="search-section">
+          <form action="" id="search-form">
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Search for a movie"
+                id="search-form__input"
+                autocomplete="off"
+              />
+              <button id="search-form__btn">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="movies-container">
+          <div class="init-container">
+            <img class="movie-icon" src="img/movie-icon.svg" alt="" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
