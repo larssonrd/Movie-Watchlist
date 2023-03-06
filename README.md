@@ -2,7 +2,7 @@
 
 This was a solo project I undertook through Scrimba, in which I received a Figma design file and instructions on how the app should function. No starting code was provided.
 
-Besides the requirements I added pagenation, ability to remove from watchlist and responsiveness.
+Besides the requirements, I added pagination, the ability to remove items from the watchlist, and responsiveness.
 - Github Pages: https://larssonrd.github.io/SP--Movie-Watchlist/
 
 
