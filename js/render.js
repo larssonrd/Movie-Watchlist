@@ -1,5 +1,5 @@
-import { moviesContainer } from "./app.js";
-import { watchlistArr, addHandler } from "./watchlist.js";
+import { moviesContainer } from './app.js';
+import { watchlistArr, addHandler } from './watchlist.js';
 
 export function renderSpinner() {
   const markup = `<div class="init-container">
@@ -17,7 +17,7 @@ export function renderMovie(result) {
         <div class="init-container">
           <img class="movie-icon" src="img/movie-icon.svg" alt="" />
         </div>`;
-    moviesContainer.insertAdjacentHTML("afterbegin", markup);
+    moviesContainer.insertAdjacentHTML('afterbegin', markup);
   }
 
   result.forEach((movie) => {
@@ -33,8 +33,8 @@ export function renderMovie(result) {
 
     const inWatchlist = watchlistArr.find((movie) => movie.imdbID === id);
 
-    if (imgUrl === "N/A") {
-      imgUrl = "./img/no-image.svg";
+    if (imgUrl === 'N/A') {
+      imgUrl = './img/no-image.svg';
     }
 
     const markup = `<div class="movie" data-id="${id}">
@@ -65,7 +65,7 @@ export function renderMovie(result) {
         </div>
       </div>`;
 
-    moviesContainer.insertAdjacentHTML("beforeend", markup);
+    moviesContainer.insertAdjacentHTML('beforeend', markup);
   });
 
   addHandler(result);

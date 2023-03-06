@@ -1,12 +1,12 @@
-import { moviesContainer, getJSON } from "./app.js";
-import { addPagination } from "./app.js";
-import { renderSpinner, renderMovie } from "./render.js";
+import { moviesContainer, getJSON } from './app.js';
+import { addPagination } from './app.js';
+import { renderSpinner, renderMovie } from './render.js';
 
-const API_KEY = "f807804a";
+const API_KEY = 'f807804a';
 
 export function searchMovie() {
   let currentSearchPage = 1;
-  let currentQuery = "";
+  let currentQuery = '';
 
   return async function (query, pageChange) {
     try {
@@ -18,9 +18,9 @@ export function searchMovie() {
         currentSearchPage = 1;
       }
 
-      if (pageChange === "+") currentSearchPage++;
-      if (pageChange === "-") currentSearchPage--;
-      if (typeof pageChange === "number") currentSearchPage = pageChange;
+      if (pageChange === '+') currentSearchPage++;
+      if (pageChange === '-') currentSearchPage--;
+      if (typeof pageChange === 'number') currentSearchPage = pageChange;
 
       const getInitialData = await getJSON(
         `https://omdbapi.com/?apikey=${API_KEY}&s=${query}&page=${currentSearchPage}`
