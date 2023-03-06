@@ -11,10 +11,7 @@ export function addHandler(result) {
   const moviesListArr = document.querySelectorAll(".movie");
   moviesListArr.forEach((movie) => {
     movie.addEventListener("click", (e) => {
-      if (
-        e.target === movie.querySelector(".movie__watchlist-btn") ||
-        movie.querySelector(".movie__watchlist-btn-icon")
-      ) {
+      if (e.target.matches(".movie__watchlist-btn, .movie__watchlist-btn-icon")) {
         handleWatchlistClick(movie.dataset.id, result, movie);
       }
     });
