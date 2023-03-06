@@ -4,10 +4,10 @@ Solo project from Scrimba where I was provided with a figma design file and inst
 No start code was provided. 
 
 Besides the requirements I added pagenation, ability to remove from watchlist and responsiveness.
+- Github Pages: https://larssonrd.github.io/SP--Movie-Watchlist/
 
-Github Pages: https://larssonrd.github.io/SP--Movie-Watchlist/
 
-Provided design example: 
+## Design example from Scrimba
 ![image](https://user-images.githubusercontent.com/94178885/223219837-d4e4b6a7-9f14-4a23-ae67-950969ae2ead.png)
 
 
