@@ -32,9 +32,9 @@ export function addPagination(totalPages, currentPage) {
   if (totalPages > 1) {
     const markup = `
     <div class="pagination">
-      <a id="prev-page">Previous page</a>
+      <a class="pagination__btn" id="prev-page">Previous page</a>
       <p>${currentPage}/${totalPages}</p>
-      <a id="next-page">Next page</a>
+      <a class="pagination__btn" id="next-page">Next page</a>
     </div>`;
 
     moviesContainer.insertAdjacentHTML('beforeend', markup);

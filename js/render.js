@@ -37,12 +37,13 @@ export function renderMovie(result) {
       imgUrl = './img/no-image.svg';
     }
 
-    const markup = `<div class="movie" data-id="${id}">
+    const markup = `
+      <article class="movie" data-id="${id}">
         <img class="movie__image" src="${imgUrl}" alt="" />
         <div class="movie__info">
           <h2 class="movie__title">
             ${title}
-            <span class="rating"
+            <span class="movie__rating"
               ><img src="./img/star-icon.svg" alt="" srcset="" /> ${rating}</span
             >
           </h2>
@@ -63,7 +64,7 @@ export function renderMovie(result) {
             <a class="movie__imdb-link" target="_blank" href="https://www.imdb.com/title/${id}">Read more on imdb</a>
           </div>
         </div>
-      </div>`;
+      </article>`;
 
     moviesContainer.insertAdjacentHTML('beforeend', markup);
   });
