@@ -1,5 +1,5 @@
 import { renderMovie } from './render.js';
-import { addPagination } from './app.js';
+import { addPagination } from '../main.js';
 
 export const watchlistArr = localStorage.getItem('movies')
   ? JSON.parse(localStorage.getItem('movies'))

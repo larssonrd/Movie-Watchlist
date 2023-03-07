@@ -1,5 +1,5 @@
-import { searchMovie } from './search.js';
-import { renderWatchlist } from './watchlist.js';
+import { searchMovie } from './js/search.js';
+import { renderWatchlist } from './js/watchlist.js';
 
 export const moviesContainer = document.querySelector('.movies-container');
 const searchInput = document.getElementById('search-form__input');

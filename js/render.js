@@ -1,4 +1,4 @@
-import { moviesContainer } from './app.js';
+import { moviesContainer } from '../main.js';
 import { watchlistArr, addHandler } from './watchlist.js';
 
 export function renderSpinner() {

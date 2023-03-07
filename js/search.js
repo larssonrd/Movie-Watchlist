@@ -1,5 +1,5 @@
-import { moviesContainer, getJSON } from './app.js';
-import { addPagination } from './app.js';
+import { moviesContainer, getJSON } from '../main.js';
+import { addPagination } from '../main.js';
 import { renderSpinner, renderMovie } from './render.js';
 
 const API_KEY = 'f807804a';
@@ -40,7 +40,7 @@ export function searchMovie() {
       renderMovie(detailedData);
       addPagination(totalSearchPages, currentSearchPage);
     } catch (err) {
-      moviesContainer.innerHTML = `<div class="init-container">Movie not found!</div>`;
+      moviesContainer.innerHTML = `<div class="init-container">No movie found. Please try again.</div>`;
       console.error(err);
     }
   };
